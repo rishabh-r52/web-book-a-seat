@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.ttf') format('truetype'); /* TTF font */
+    /* Optionally, specify font-weight and font-style */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Anton';
+    src: url('../fonts/Anton-Regular.ttf') format('truetype'); /* TTF font */
+    /* Optionally, specify font-weight and font-style */
+    font-weight: normal;
+    font-style: normal;
+}
+.navbar {
+    font-size: 1.5em;
+}
+.navbar-brand {
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    color: #FF9933;
+    padding-left: 0px;
+    margin-left: 40px;
+}
+.navbar-brand .a-letter {
+    color: #006ef5;
+}
+.navbar-brand .seat-word {
+    color: #228B22;
+}
+.navbar-brand .dashes {
+    color: #ffffff;
+}
+.navbar-items {
+    margin-right: 20px;
+}
+.navbar-items .nav-item {
+    margin-right: 20px;
+}
+.footer {
+    color: white; /* Text color */
+    padding: 10px 0; /* Add padding for better spacing */
+}
+.footer p {
+    margin: 0; /* Remove default margin */
+}
+.fas {
+    margin-right: 10px;
+}

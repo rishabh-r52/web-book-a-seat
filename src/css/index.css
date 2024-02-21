@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.ttf') format('truetype');
+    /* TTF font */
+    /* Optionally, specify font-weight and font-style */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.heading {
+    font-size: 64px;
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    flex: 0;
+    margin-bottom: 100px;
+    text-shadow: 0 0 3px black;
+}
+
+.word-book {
+    color: #FF9933;
+}
+
+.word-a {
+    color: #006ef5;
+}
+
+.word-dashes {
+    color: whitesmoke;
+}
+
+.word-seat {
+    color: #228B22;
+}
+
+.auth-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.auth-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.create-account-link {
+    color: #007bff;
+    text-decoration: none;
+}

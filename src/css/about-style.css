@@ -1,0 +1,11 @@
+.description-text{
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.team-desc{
+    margin-top: 100px;
+}
+.main-container {
+    flex: 1;
+}

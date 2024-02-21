@@ -1,0 +1,28 @@
+body {
+    background-image: url('../images/homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.homeimagetext {
+    margin-top: 100px;
+}
+.jumbotron {
+    background-color: transparent;
+    color: white;
+    text-shadow: 0 0 2px black;
+    flex: 1;
+}
+.help-list-head {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+.help-list {
+    padding-left: 125px;
+}
+.help-list-ul {
+    list-style-type: none;
+}
+.help-list .help-list-item {
+    margin-top: 20px;
+}

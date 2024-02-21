@@ -1,0 +1,12 @@
+.main_container {
+    margin-top: 20px;
+    flex: 1;
+}
+.submit_button {
+    margin-top: 20px;
+}
+.usermessage {
+    font-size: 32px;
+    margin: auto;
+    margin-top: 30px;
+}
