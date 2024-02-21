@@ -27,8 +27,9 @@ What sets us apart is our commitment to customer satisfaction. We strive to ensu
             <div class="col-md-6">
                 <h3>Our Team</h3>
                 <ul>
-                    <li>Abhishek Kumar</li>
+                    <li>Rishabh Ranjan</li>
                     <li>Manas Kumar Panday</li>
+                    <li>Abhishek Kumar</li>
                 </ul>
             </div>
         </div>
