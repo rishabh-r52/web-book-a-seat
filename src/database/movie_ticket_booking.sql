@@ -42,7 +42,7 @@ CREATE TABLE `bookings` (
   CONSTRAINT `bookings_ibfk_3` FOREIGN KEY (`city_name`) REFERENCES `cities` (`city_name`),
   CONSTRAINT `bookings_ibfk_4` FOREIGN KEY (`language`) REFERENCES `languages` (`name`),
   CONSTRAINT `bookings_ibfk_5` FOREIGN KEY (`quality_type`) REFERENCES `quality` (`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -51,7 +51,7 @@ CREATE TABLE `bookings` (
 
 LOCK TABLES `bookings` WRITE;
 /*!40000 ALTER TABLE `bookings` DISABLE KEYS */;
-INSERT INTO `bookings` VALUES (1,'user1','The Dark Knight','Bangalore','English','IMAX','2024-02-21','2024-02-19'),(2,'user1','Kabir Singh','Srinagar','Bhojpuri','4DX','2024-02-14','2024-02-19'),(3,'user2','Avengers: Endgame','New Delhi','Hindi','2D','2024-02-26','2024-02-19'),(4,'user1','Avengers: Endgame','Chennai','Kannada','4DX','2024-02-21','2024-02-19'),(5,'user1','Avengers: Endgame','Chennai','Bengali','2D','2024-02-21','2024-02-19'),(6,'user2','The Shawshank Redemption','Indore','Telugu','3D','2024-02-24','2024-02-19'),(7,'user2','Dangal','Lucknow','Marathi','2D','2024-02-22','2024-02-19'),(10,'shubh','The Dark Knight','Ranchi','Kannada','IMAX 3D','2027-12-30','2024-02-22');
+INSERT INTO `bookings` VALUES (1,'user1','The Dark Knight','Bangalore','English','IMAX','2024-02-21','2024-02-19'),(2,'user1','Kabir Singh','Srinagar','Bhojpuri','4DX','2024-02-14','2024-02-19'),(3,'user2','Avengers: Endgame','New Delhi','Hindi','2D','2024-02-26','2024-02-19'),(4,'user1','Avengers: Endgame','Chennai','Kannada','4DX','2024-02-21','2024-02-19'),(5,'user1','Avengers: Endgame','Chennai','Bengali','2D','2024-02-21','2024-02-19'),(6,'user2','The Shawshank Redemption','Indore','Telugu','3D','2024-02-24','2024-02-19'),(7,'user2','Dangal','Lucknow','Marathi','2D','2024-02-22','2024-02-19'),(11,'user1','Interstellar','Patna','English','IMAX 2D','2024-02-29','2024-02-22');
 /*!40000 ALTER TABLE `bookings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -67,7 +67,7 @@ CREATE TABLE `cities` (
   `city_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_cities_city_name` (`city_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,7 +76,7 @@ CREATE TABLE `cities` (
 
 LOCK TABLES `cities` WRITE;
 /*!40000 ALTER TABLE `cities` DISABLE KEYS */;
-INSERT INTO `cities` VALUES (20,'Agra'),(9,'Ahmedabad'),(19,'Ara'),(2,'Bangalore'),(5,'Chennai'),(7,'Hyderabad'),(8,'Indore'),(18,'Kanpur'),(3,'Kolkata'),(6,'Lucknow'),(4,'Mumbai'),(24,'Nagpur'),(1,'New Delhi'),(11,'Patna'),(23,'Pune'),(12,'Ranchi'),(10,'Srinagar'),(22,'Tumkur'),(21,'Udaipur');
+INSERT INTO `cities` VALUES (20,'Agra'),(9,'Ahmedabad'),(26,'Aligarh'),(19,'Ara'),(2,'Bangalore'),(5,'Chennai'),(7,'Hyderabad'),(8,'Indore'),(18,'Kanpur'),(3,'Kolkata'),(6,'Lucknow'),(4,'Mumbai'),(24,'Nagpur'),(1,'New Delhi'),(11,'Patna'),(23,'Pune'),(12,'Ranchi'),(25,'Sitamarhi'),(10,'Srinagar'),(22,'Tumkur'),(21,'Udaipur');
 /*!40000 ALTER TABLE `cities` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -92,7 +92,7 @@ CREATE TABLE `languages` (
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_languages_name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -101,7 +101,7 @@ CREATE TABLE `languages` (
 
 LOCK TABLES `languages` WRITE;
 /*!40000 ALTER TABLE `languages` DISABLE KEYS */;
-INSERT INTO `languages` VALUES (5,'Bengali'),(3,'Bhojpuri'),(2,'English'),(9,'Gujarati'),(1,'Hindi'),(4,'Kannada'),(10,'Malyalam'),(6,'Marathi'),(7,'Tamil'),(8,'Telugu');
+INSERT INTO `languages` VALUES (5,'Bengali'),(3,'Bhojpuri'),(2,'English'),(9,'Gujarati'),(1,'Hindi'),(12,'Japanese'),(4,'Kannada'),(10,'Malyalam'),(6,'Marathi'),(11,'Russian'),(13,'Sindhi'),(7,'Tamil'),(8,'Telugu');
 /*!40000 ALTER TABLE `languages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -118,7 +118,7 @@ CREATE TABLE `movies` (
   `release_date` date DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_movies_title` (`title`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -127,7 +127,7 @@ CREATE TABLE `movies` (
 
 LOCK TABLES `movies` WRITE;
 /*!40000 ALTER TABLE `movies` DISABLE KEYS */;
-INSERT INTO `movies` VALUES (1,'The Dark Knight','2008-07-18'),(2,'Inception','2010-07-16'),(3,'Bahubali: The Beginning','2015-07-10'),(4,'Avengers: Endgame','2019-04-26'),(5,'Parasite','2019-11-08'),(6,'Dangal','2016-12-23'),(7,'Interstellar','2014-11-07'),(8,'Kabir Singh','2019-06-21'),(9,'The Shawshank Redemption','1994-09-23'),(10,'Baahubali 2: The Conclusion','2017-04-28');
+INSERT INTO `movies` VALUES (1,'The Dark Knight','2008-07-18'),(2,'Inception','2010-07-16'),(3,'Bahubali: The Beginning','2015-07-10'),(4,'Avengers: Endgame','2019-04-26'),(5,'Parasite','2019-11-08'),(6,'Dangal','2016-12-23'),(7,'Interstellar','2014-11-07'),(8,'Kabir Singh','2019-06-21'),(9,'The Shawshank Redemption','1994-09-23'),(10,'Baahubali 2: The Conclusion','2017-04-28'),(28,'Tarzan the Wonder Car','2005-01-25'),(29,'Lavanasur','1969-09-06');
 /*!40000 ALTER TABLE `movies` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -143,7 +143,7 @@ CREATE TABLE `quality` (
   `type` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_qualities_type` (`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -152,7 +152,7 @@ CREATE TABLE `quality` (
 
 LOCK TABLES `quality` WRITE;
 /*!40000 ALTER TABLE `quality` DISABLE KEYS */;
-INSERT INTO `quality` VALUES (4,'2D'),(3,'3D'),(2,'4DX'),(1,'IMAX'),(6,'IMAX 2D'),(5,'IMAX 3D');
+INSERT INTO `quality` VALUES (4,'2D'),(3,'3D'),(2,'4DX'),(1,'IMAX'),(6,'IMAX 2D'),(5,'IMAX 3D'),(7,'Lehar Pepsi');
 /*!40000 ALTER TABLE `quality` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -178,7 +178,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'admin','admin123'),(2,'user1','1234'),(5,'user2','0000'),(8,'shubh','shub123'),(9,'shubh','123');
+INSERT INTO `users` VALUES (1,'admin','admin123'),(2,'user1','1111'),(5,'user2','0000');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -191,4 +191,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-22 20:39:32
+-- Dump completed on 2024-02-22 23:15:01
