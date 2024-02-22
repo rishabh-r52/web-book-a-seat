@@ -5,15 +5,18 @@ body {
     background-repeat: no-repeat;
 }
 .homeimagetext {
-    margin-top: 100px;
+    margin-top: 10%;
 }
 .jumbotron {
     background-color: transparent;
     color: white;
-    text-shadow: 0 0 2px black;
+    text-shadow: 0 0 3px black;
     flex: 1;
 }
-.help-list-head {
+.main-text {
+    font-weight: bolder;
+}
+/* .help-list-head {
     font-size: 1.2em;
     font-weight: 100;
 }
@@ -25,4 +28,4 @@ body {
 }
 .help-list .help-list-item {
     margin-top: 20px;
-}
+} */

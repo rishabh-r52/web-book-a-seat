@@ -7,11 +7,11 @@
 
 <div class="jumbotron">
     <div class="container homeimagetext">
-        <h1 class="display-4">Welcome to Book-a-Seat!</h1>
+        <h1 class="display-2">Welcome to <br><span class="main-text">Book-a-Seat</span>!</h1><br>
         <p class="lead">Book your movie tickets online and enjoy the latest <br>releases in the comfort of your favorite movie halls.</p>
     </div>
 	<br>
-	<div class="help-list">
+	<!-- <div class="help-list">
 		<p class="help-list-head">Traverse our website using our Navbar: </p>
 		<ul class="help-list-ul">
 			<li class="help-list-item">
@@ -35,7 +35,7 @@
 				LOGOUT
 			</li>
 		</ul>
-	</div>
+	</div> -->
 </div>
 
 <!-- Includes the footer part -->

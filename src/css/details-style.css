@@ -1,0 +1,64 @@
+.box-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow wrapping of boxes */
+    gap: 50px; /* Add gap between boxes */
+    margin-top: 50px; /* Add margin at the top */
+}
+
+.box {
+    width: calc(50% - 250px); /* Set width for two boxes in one row */
+    height: 200px;
+    background-color: #343a40; /* Dark color matching navbar */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 50px; /* Add margin at the bottom */
+    color: #f8f9fa; /* Off-white text color */
+}
+
+
+
+
+/* Hover effect */
+.box1:hover {
+    transform: rotate3d(-1, 1, 0, 30deg);
+}
+
+.box2:hover {
+    transform: rotate3d(1, 1, 0, 30deg);
+}
+
+/* Text styling */
+.box h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8f9fa; /* Off-white text color */
+}
+
+.box p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 18px;
+    color: #f8f9fa; /* Off-white text color */
+}
+
+.movies-header {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 50px; /* Adjust margin as needed */
+    font-family: 'Anton', sans-serif; /* Apply Anton font */
+}
+
+
+.filler {
+    margin-top: auto;
+    margin-bottom: auto;
+}

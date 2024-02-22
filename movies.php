@@ -34,6 +34,13 @@
             echo "    <p>Add more options for Users!</p> ";
             echo " </div> ";
             echo " </div> ";
+
+            echo " <div class=\"box\" onclick=\"window.location.href='view_details.php';\"> ";
+            echo " <div> ";
+            echo "    <h2>View Details</h2> ";
+            echo "    <p>View existing User options!</p> ";
+            echo " </div> ";
+            echo " </div> ";
         }
         else{
             echo " <div class=\"box\" onclick=\"window.location.href='new_bookings.php';\"> ";
