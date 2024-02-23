@@ -5,3 +5,10 @@
 .filler {
   margin-bottom: auto;
 }
+
+.movies-header {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 50px; /* Adjust margin as needed */
+  font-family: 'Anton', sans-serif; /* Apply Anton font */
+}

@@ -22,9 +22,6 @@
     color: #f8f9fa; /* Off-white text color */
 }
 
-
-
-
 /* Hover effect */
 .box1:hover {
     transform: rotate3d(-1, 1, 0, 30deg);
@@ -61,4 +58,15 @@
 .filler {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.orange-box {
+    background-color: #006ef5;
+}
+
+.blue-box {
+    background-color: #006ef5;
+}
+.green-box {
+    background-color: #006ef5;
 }

@@ -7,8 +7,8 @@
 
 
     .box {
-        width: 400px;
-        height: 400px;
+        width: 370px;
+        height: 370px;
         background-color: #343a40; /* Dark color matching navbar */
         border-radius: 8px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
@@ -49,4 +49,16 @@
         font-size: 60px;
         margin-top: 50px; /* Adjust margin as needed */
         font-family: 'Anton', sans-serif; /* Apply Anton font */
+    }
+
+    .orange-box {
+        background-color: #FF9933;
+    }
+
+    .blue-box {
+        background-color: #006ef5;
+    }
+
+    .green-box {
+        background-color: #228B22;
     }

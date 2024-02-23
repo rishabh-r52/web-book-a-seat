@@ -12,7 +12,7 @@
 
 <div class="box-container">
     <!-- First Box -->
-    <div class="box box1" onclick="window.location.href='view_cities.php';">
+    <div class="box box1 orange-box" onclick="window.location.href='view_cities.php';">
         <div>
             <h2>Cities</h2>
             <?php
@@ -25,7 +25,7 @@
             ?>
         </div>
     </div>
-    <div class="box box2" onclick="window.location.href='view_languages.php';">
+    <div class="box box2 orange-box" onclick="window.location.href='view_languages.php';">
         <div>
             <h2>Languages</h2>
             <?php
@@ -38,7 +38,7 @@
             ?>
         </div>
     </div>
-    <div class="box box1" onclick="window.location.href='view_quality.php';">
+    <div class="box box1 green-box" onclick="window.location.href='view_quality.php';">
         <div>
             <h2>Qualities</h2>
             <?php
@@ -51,7 +51,7 @@
             ?>
         </div>
     </div>
-    <div class="box box2" onclick="window.location.href='view_movies.php';">
+    <div class="box box2 green-box" onclick="window.location.href='view_movies.php';">
         <div>
             <h2>Movies</h2>
             <?php

@@ -7,7 +7,7 @@
 
 <div class="jumbotron">
     <div class="container homeimagetext">
-        <h1 class="display-2">Welcome to <br><span class="main-text">Book-a-Seat</span>!</h1><br>
+        <h1 class="display-2">Welcome to <br><span class="main-text"><span class="logo-text"><span class='orange-box'>Book</span>-<span class='blue-box'>a</span>-<span class='green-box'>Seat</span></span></span>!</h1><br>
         <p class="lead">Book your movie tickets online and enjoy the latest <br>releases in the comfort of your favorite movie halls.</p>
     </div>
 	<br>

@@ -16,16 +16,19 @@ body {
 .main-text {
     font-weight: bolder;
 }
-/* .help-list-head {
-    font-size: 1.2em;
-    font-weight: 100;
+
+.orange-box {
+    color: #FF9933;
 }
-.help-list {
-    padding-left: 125px;
+
+.blue-box {
+    color: #006ef5;
 }
-.help-list-ul {
-    list-style-type: none;
+
+.green-box {
+    color: #228B22;
 }
-.help-list .help-list-item {
-    margin-top: 20px;
-} */
+
+.logo-text {
+    font-family: 'Pacifico';
+}

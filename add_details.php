@@ -1,14 +1,19 @@
 <?php include 'src/components/session_manager.php'?>
 <?php include 'src/components/header1.php'?>
 
-<link rel="stylesheet" href="add_details.css">
+<link rel="stylesheet" href="src/css/add-details.css">
 <!-- Include Bootstrap CSS -->
 <?php include 'src/components/header2.php'?>
+
+<div class="movies-header">
+    MOVIES DATABASE
+</div>
 
 <form id="myForm" action="src/components/submit.php" method="post" class="mt-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
+              <label for="selection">Choose a Table:</label>
                 <select id="selection" name="option" class="form-control mb-3">
                     <option value="">Choose an option</option>
                     <option value="cities">Cities</option>
@@ -27,7 +32,6 @@
 
 <div class="filler"></div>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 <script>
   document.getElementById('selection').addEventListener('change', function() {
     var selection = this.value;
@@ -72,5 +76,7 @@
           inputFieldsDiv.style.display = 'block';
         });
       </script>
+
+      <div class="filler"></div>
 
 <?php include 'src/components/footer.php'?>
